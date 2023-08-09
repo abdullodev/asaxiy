@@ -20,7 +20,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <div class="container">
@@ -56,7 +61,7 @@
                 <div class="nav_products_btns">
                   <div class="nav_carts_sum">
                     <div>Amount</div>
-                    <div class="allSum">0 $</div>
+                    <div class="all_sum">0 $</div>
                   </div>
                   <div class="nav_btn">
                     <a href="#">Buy</a>
@@ -65,7 +70,12 @@
                 </div>
               </div>
             </li>
-            <li><i class="fa-solid fa-heart"></i><span>Like</span></li>
+            <li class="like_link">
+              <a href="#">
+                <i class="fa-solid fa-heart"></i><span>Like</span>
+                <span class="like_count">0</span>
+              </a>
+            </li>
             <li><i class="fa-solid fa-user"></i> <span>User</span></li>
           </ul>
         </div>
@@ -76,22 +86,17 @@
       </nav>
 
       <div class="title">
-        <h2>Carts</h2>
+        <h2>Products</h2>
       </div>
+      <span class="loader"></span>
 
-      <div class="cart_content">
-        <div class="cart_boxes"></div>
-
-        <div class="cart_amount">
-          <div class="amount_box">
-            <p class="summarize">0 $</p>
-            <button>Buy</button>
-          </div>
-        </div>
-      </div>
+      <div class="content"></div>
     </div>
 
-    <script src="../js/main.js"></script>
-    <script src="../js/cart.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
