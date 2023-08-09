@@ -501,6 +501,14 @@ nav .nav_links ul li:hover span {
   max-height: 100%;
   object-fit: cover;
 }
+.cart_content .cart_boxes button {
+  background-color: #0066ba;
+  color: #ffffff;
+  padding: 7px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
 
 .cart_content .cart_amount .amount_box {
   position: sticky;
